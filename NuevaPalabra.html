@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ahorcado Moroni Almazán</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+       
+        <header>
+        </header>
+        <main>
+            <input id="txtNueva" type="text" autofocus placeholder="Ingresa una palabra" onkeyup = "this.value=this.value.toUpperCase(), validaremos(this,'special')" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122))" maxlength="8">
+            <h6>Maximo 8 letras</h6>           
+          
+            <div class="botones1">
+                <a href="areaJuego.html"><button id="guardar" onclick="agregarPalabra()">Guardar y comenzar</button></a>
+                <a href="index.html"><button id="cancelar">Cancelar</button></a>    
+            </div>
+        </main>
+        <footer>
+            <p>Made by Moroni Almazán</p>
+        </footer>
+
+        <script src="agregar.js"></script>
+
+    </body>
+    
+</html>
